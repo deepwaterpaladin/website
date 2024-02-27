@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rielly H. Young</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <style>
+            body {
+                background-color: #ebdbb2;
+                font-style: normal;
+                font-family: Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+            }
+            .container {
+                width: 85%;
+                margin: 10 auto;
+                padding: 30px;
+                background-color: #ffffff;
+            }
+            .project {
+                width: 85%;
+                margin: auto;
+                padding: 30px;
+                background-color: #ffffff;
+            }
+            .block{
+                background-color: #ebdbb2;
+            }
+            .nav {
+                padding: 10px 0;
+                margin: 15px;
+            }
+            .nav-title {
+                color: hsl(0, 0%, 0%);
+                margin: 15px;
+            }
+            .nav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            .nav ul li {
+                display: inline;
+                margin-right: 9px;
+            }
+            .nav ul li a {
+                color: hwb(211 30% 18%);
+                text-decoration: none;
+            }
+            .nav ul li a:hover {
+                text-decoration: underline;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th, td {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <header class = "nav">
+        <h1 class="nav-title">Rielly H. Young | Software Developer</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="/">Home</a> | </li>
+                <li><a href="/blog">Blog</a> |</li>
+                <li><a href="/projects">Projects</a> |</li>
+                <li><a href="/links">Links</a> |</li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <div class="project">
+            <h2>Tweeting your way to Parliament: Quantitative Analysis of Twitter use in the 2022 Ontario Provincial Election (June, 2022)</h2>
+            <p>Each month, more than fifteen million Canadians use Twitter - approximately 50% of the nation’s online population (Slater, 2018). Of this group, forty-four percent access the application multiple times a day. The ubiquity of the platform amongst voters is a driving factor in the increased attention from political scientists today.</p>
+            <p>Given the pervasiveness of the platform, understanding its role in electoral outcomes is of great importance. This research paper seeks to contribute to the grow literature examining the impacts of social media on elections. It does so by examining the impacts of Twitter usage on the 43rd Parliament of Ontario.</p>
+            <p>The following is a brief exeprt of a larger research paper conducted during my undergrad at uOttawa. For access to the full paper, please contact me <a href="/contact">here</a>.</p>
+            <div class="additional-content" style="display: none;">
+                <h3>Literature Review</h3>
+                <p>There is a non-insignificant amount of scholarship examining the behaviour of political campaigns on Twitter.  This can be broken-down into two distinct categories: volume studies and content studies. The former category examines the impact of both the presence of a candidate on the platform and the sum of their usage. DiGrazia, et. al., (2013) examine more than half a million tweets pertaining to the 2010 & 2012 Congressional elections in the United States, arguing political behiviour can be determined by social media use.</p>
+                <p>Graham, Jackson, & Broersma (2014) conducted a comparative analysis of Twitter usage by British and Dutch parliamentarians, finding the latter as the more active userbase. This work highlights that of Kruikemeier (2014), who found that campaigns in 2010 Dutch national election that used the platform received more votes than campaigns that did not.</p>
+                <p>The latter category focuses on the intersection of electoral results and specific content of the trending topics, tweets, and interactions on the platform. Christensen (2013) examined the effects of Twitter usage by 'Third parties' in the 2012 U.S. presidential election and Fujiwara, Müller, & Schwarz (2022) examined partisanship on the platform through a textual analysis of tweets and trending topics during the 2016 and 2020 U.S. elections.</p>
+                <p>López-Garcìa (2016) examined cross-party usage of twitter during the 2015 Spanish general election, highlighting the different ways each party used the platform. While the main political parties used Twitter to broadcast specific policy proposals, emerging parties more often used the platform to mobilize their supporters and to galvanize political change. This research supports the finding of Larsson and Kalsnes (2014), who examined Norwegian and Swedish politicians - highlighting the most active politician as “underdogs”, typically in the opposition and out of the “political limelight”.</p>
+                
+                <h3>Research Design</h3>
+                <p>This study examined the Twitter behaviour of candidates running for the Ontario Provincial Parliament during the 2022 Provincial election. Specifically, this study examines the electoral outcomes of fourteen (14) races MPP races. This sample was determined based on two primary criteria: polling average prior to the election and platform presence.</p>
+                <p>The first criteria required elections where two or more candidates were within the margin of error from the iPolitics polling average one day prior to the election. The second aspect of the selection criteria is fairly simple, only races where the candidates have a twitter account were selected. Inclusion of the latter category required the exclusion of several races which met the first criteria, including Burlington & Eglington-Lawrence for example. The resulting sample can be found in Table 1.1</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Riding</th>
+                            <th>Candidates</th>
+                            <th>Total Tweets</th>
+                            <th>Total Retweets</th>
+                            <th>Total Tweets (all)</th>
+                            <th>Votes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ajax</td>
+                            <td>3</td>
+                            <td>88</td>
+                            <td>14</td>
+                            <td>102</td>
+                            <td>37,688</td>
+                        </tr>
+                        <tr>
+                            <td>Brampton Centre</td>
+                            <td>3</td>
+                            <td>92</td>
+                            <td>22</td>
+                            <td>114</td>
+                            <td>24,466</td>
+                        </tr>
+                        <tr>
+                            <td>Brampton West</td>
+                            <td>3</td>
+                            <td>91</td>
+                            <td>113</td>
+                            <td>204</td>
+                            <td>30,316</td>
+                        </tr>
+                        <tr>
+                            <td>Hamilton East</td>
+                            <td>3</td>
+                            <td>85</td>
+                            <td>68</td>
+                            <td>153</td>
+                            <td>35,166</td>
+                        </tr>
+                        <tr>
+                            <td>Parry Sound-Muskoka</td>
+                            <td>3</td>
+                            <td>141</td>
+                            <td>152</td>
+                            <td>293</td>
+                            <td>44,522</td>
+                        </tr>
+                        <tr>
+                            <td>York South</td>
+                            <td>3</td>
+                            <td>171</td>
+                            <td>48</td>
+                            <td>219</td>
+                            <td>30,426</td>
+                        </tr>
+                        <tr>
+                            <td>Beaches-East York</td>
+                            <td>3</td>
+                            <td>466</td>
+                            <td>19</td>
+                            <td>485</td>
+                            <td>40,648</td>
+                        </tr>
+                        <tr>
+                            <td>Toronto Centre</td>
+                            <td>3</td>
+                            <td>347</td>
+                            <td>245</td>
+                            <td>592</td>
+                            <td>34,909</td>
+                        </tr>
+                        <tr>
+                            <td>Thunder Bay</td>
+                            <td>2</td>
+                            <td>93</td>
+                            <td>23</td>
+                            <td>116</td>
+                            <td>26,598</td>
+                        </tr>
+                        <tr>
+                            <td>Kingston</td>
+                            <td>3</td>
+                            <td>204</td>
+                            <td>45</td>
+                            <td>249</td>
+                            <td>48,738</td>
+                        </tr>
+                        <tr>
+                            <td>Ottawa-West</td>
+                            <td>3</td>
+                            <td>333</td>
+                            <td>225</td>
+                            <td>558</td>
+                            <td>41,906</td>
+                        </tr>
+                        <tr>
+                            <td>Glengarry-Prescott-Russell</td>
+                            <td>2</td>
+                            <td>40</td>
+                            <td>289</td>
+                            <td>329</td>
+                            <td>42,462</td>
+                        </tr>
+                        <tr>
+                            <td>Windsor-Tecumseh</td>
+                            <td>3</td>
+                            <td>94</td>
+                            <td>134</td>
+                            <td>228</td>
+                            <td>38,485</td>
+                        </tr>
+                        <tr>
+                            <td>Scarborough-Centre</td>
+                            <td>3</td>
+                            <td>156</td>
+                            <td>51</td>
+                            <td>207</td>
+                            <td>31,876</td>
+                        </tr>
+                        <tr>
+                            <td><b>Total</b></td>
+                            <td>40</td>
+                            <td>2401</td>
+                            <td>1448</td>
+                            <td>3849</td>
+                            <td>508,206</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <sub>Table 1</sub>
+
+                <h3>Results</h3>
+                <p>Approximately four and a half million Ontarians cast a ballot in the 2022 provincial election. This studies’ sample represented approximately 12% of the provincial vote, or 508,206 (see Table 1). The mean number of tweets was 60 and mean of retweets was 36. The standard deviation for these variables were 72.7 and 54.3 respectively - suggesting a significant level of variation within the sample.</p>
+                <p> </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Variable</th>
+                            <th>Observations</th>
+                            <th>Mean</th>
+                            <th>Standard Deviation</th>
+                            <th>Minimum</th>
+                            <th>Maximum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tweets</td>
+                            <td>2,401</td>
+                            <td>60</td>
+                            <td>72</td>
+                            <td>3</td>
+                            <td>383</td>
+                        </tr>
+                        <tr>
+                            <td>Retweets</td>
+                            <td>1,448</td>
+                            <td>36.2</td>
+                            <td>54.3</td>
+                            <td>0</td>
+                            <td>249</td>
+                        </tr>
+                        <tr>
+                            <td>Total Tweets</td>
+                            <td>3,849</td>
+                            <td>96.2</td>
+                            <td>101.91</td>
+                            <td>1</td>
+                            <td>452</td>
+                        </tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <sub>Table 2</sub>
+                <p>To determine if a relationship between Twitter use and vote outcomes could be found, a series of OLS regression models were conducted. Table 2 addresses the first set of hypotheses’: whether Name Recognition Effects are impacted by Twitter use, and whether non-incumbents are more benefited by this effect.</p>
+                <p>Continued analysis available for request <a href="/contact">here</a>.</p>
+
+                <h3>Discussion</h3>
+                <p>The results outlined in the previous section demonstrate considerable evidence of a relationship between a political candidate’s activity on Twitter and their electoral performance. While the multivariate regression model for hypothesis 1A* demonstrates a relationship between Twitter presence and votes received the lack of control group limits the interpretations that can be made of the findings.</p>
+                <p>As such, the finding relating to hypothesis 1B are of increased importance. Both model 1 * and model 2 ** highlight a disparity in the relationship between Twitter activity and votes received. This finding is consistent, if not slightly below, the consensus within the academic literature.</p>
+                <p>For example, Bright et. al (2020) found that increasing tweets sent during a campaign by a factor of 10 increase the votes for non-incumbent candidates by 270 or approximately half a percentage point - while model 2 ** found this increase to be 170 votes (half a percentage point of the average vote from this studies’ sample is 182 votes).</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Party</th>
+                            <th>2018 Election</th>
+                            <th>2022 Election</th>
+                            <th>Vote Change</th>
+                            <th>Percentage Change</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>PCPO</td>
+                            <td>2,326,523</td>
+                            <td>1,912,651</td>
+                            <td>-413,872</td>
+                            <td>-17.79%</td>
+                        </tr>
+                        <tr>
+                            <td>ONDP</td>
+                            <td>1,929,966</td>
+                            <td>1,111,318</td>
+                            <td>-818,648</td>
+                            <td>-42.42%</td>
+                        </tr>
+                        <tr>
+                            <td>OLP</td>
+                            <td>1,214,346</td>
+                            <td>1,117,051</td>
+                            <td>-7,295</td>
+                            <td>-0.65%</td>
+                        </tr>
+                        <tr>
+                            <td>Other</td>
+                            <td>364,025</td>
+                            <td>304,308</td>
+                            <td>-59,717</td>
+                            <td>-19.62%</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>5,744,860</td>
+                            <td>4,445,328</td>
+                            <td>-1,299,532</td>
+                            <td>-22.62%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <sub>Table 3</sub>
+                <p>Unlike the benefit of name recognition effects highlighted by H1a & H1b, the attributing of broadcast effects to Twitter behaviour is less conclusive. Model 3 *** attributes the greatest vote increase per one unit increase in retweets to the ONDP (45 votes), followed by the PCPO (30 votes) and OLP (36 votes). This finding conflicts with that of the academic literature, which postulates broadcast effects are more significant for parties with increased shares of popular support.</p>
+                
+                <h3>Conclusion</h3>
+                <p>To conclude, the cultural influence of social media on elections can no longer be ignored. Unlike most other methods of campaign message broadcasting, Twitter is essentially free. In theory, this makes it an excellent tool for small, grassroot campaigns who may lack the funding to traditional political advertising. The findings of this paper largely support the consensus amongst the academic literature pertaining to social media and electoral outcomes.</p>
+                <p>In a First-Past-the-Post system, such as Ontario, small changes in vote share can lead to massive electoral changes. Therefore, the non-insignificant vote dividend as a result of name recognition effects is of particular interest on FPTP systems.</p>
+                
+                <h3>Bibliography</h3>
+                <p>1. Boulianne, S. & Larsson, A. (2021). “Engagement with candidate posts on Twitter, Instagram, and Facebook during the 2019 election”. MacEwan University, Edmonton Alberta: https://doi.org/10.1177/14614448211009504</p>
+                <p>2. Bright, J., Hale, S., Ganesh, B., Bulovskye, A., Margetts, H., & Howard, P. (2020). “Does Campaigning on Social Media Make a Difference? Evidence of Twitter Use During the 2015 and 2017 U.K. Elections”. Oxford Internet Institute, Oxford United Kingdom: https://doi.org/10.1177/0093650219872394</p>
+                <p>3. Christensen, C. (2013). “Wave-Ridding and Hashtag-Jumping: Twitter, minority ‘third parties’ and the 2012 US elections”. Information, Communication, & Society, 16 (5): http://dx.doi.org/10.1080/1369118X.2013.783609</p>
+                <p>4. DiGrazia, J., McKelvey, K., Bollen, J., & Rojas, F. (2013). “More Tweets, More Votes: Social Media as a Quantitative Indicator of Political Behavior”. PLoS ONE 8 (11): https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3842288/ </p>
+                <p>5. Graham, T., Jackson, D., & Broersma, M. (2014). “New Platform, old habits? Candidates’ use of Twitter during the 2010 British and Dutch general election campaigns”. New Media & Society, DOI: 10.1177/1461444814546728</p>
+                <p>6. Fujiwara, T., Müller, K., & Schwarz, C (2022). “The Effect of Social Media on Elections: Evidence from the United States”. NBER: https://www.nber.org/papers/w28849</p>
+                <p>7. Kobayashi T. & Ichifuji, Y. (2015). “Tweets That Matter: Evidence from a Randomized Field Experiment in Japan”. Political Communication: http://dx.doi.org/10.1080/10584609.2014.986696</p>
+                <p>8. Kruikemeier, S. (2014). “How political candidates use Twitter and the impact on votes”. Computers in Human Behavior, 34 (1), pp. 121-139: http://dx.doi.org/10.1016/j.chb.2014.01.025 </p>
+                <p>9. Larsson, A. & Kalsnes, B. (2014). “‘Of course we are on Facebook’: Use and non-use of social media among Swedish and Norwegian politicians”. European Journal of Communications, 29 (6), pp. 653-667: https://doi.org/10.1177%2F0267323114531383 </p>
+                <p>10. Nickerson, D. & Rogers, T. (2014). “Political Campaigns and Big Data”. Journal of Economic Perspectives 28 (2), pp. 51-74.</p>
+                <p>11. Petrova M., Sen, A., & Yildirim, P. (2021). “Social Media and Political Contributions: The Impact of New Technology on Political Competition”. Management Science: http://dx.doi.org/10.2139/ssrn.2836323 </p>
+                <p>12. Slater, M. (2018). “By the Numbers: Twitter Canada at Dx3 2018”. Twitter Blog: https://blog.twitter.com/en_ca/topics/insights/2018/TwitterCanada_at_Dx3</p>
+            </div>
+
+            <button id="see-more-btn">Continue Reading</button>
+            
+        </div>
+
+        <div class="block">
+            <p> </p>
+            <p> </p>
+        </div>
+
+        <div class="project">
+            <h2>One-Time-Pad Encryption Application (May 2022)</h2>
+            <p>A one-time-pad is a type of encryption that is used to hide the contents of a message. Each letter in the encrypted phrase has a corresponding "one-time-pad" number. </p>
+            <p>This number is then used to decrypt the message. Each one-time-pad number is a random number, and thus is impossible to guess and is theoretically impossible to crack by brute force. One-time-pads are used to hide messages in email, chat, and other online communication.</p>
+            <p>The sample application uses TKinter for a simplified GUI. Source code can be found <a href="https://github.com/deepwaterpaladin/encryption_application">here</a>.</p>
+        </div>
+
+        <script>
+            document.getElementById('see-more-btn').addEventListener('click', function() {
+                var additionalContent = document.querySelector('.additional-content');
+                additionalContent.style.display = (additionalContent.style.display === 'none' || additionalContent.style.display === '') ? 'block' : 'none';
+            });
+        </script>
+    </body>
+</html>
