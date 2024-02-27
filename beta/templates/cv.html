@@ -6,76 +6,7 @@
         <title>RHY - Blog</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link rel="icon" href="{{ url_for('static', filename='test.icon') }}" type="image/x-icon">
-        <style>
-            body {
-                background-color: #ebdbb2;
-                font-style: normal;
-                font-family: Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
-            }
-            .container {
-                width: 85%;
-                margin: auto;
-                padding: 30px;
-                background-color: #ffffff;
-            }
-            .project {
-                width: 85%;
-                margin: auto;
-                padding: 30px;
-                background-color: #ffffff;
-            }
-            .block{
-                background-color: #ebdbb2;
-            }
-            .cv {
-                width: 85%;
-                margin: auto;
-                padding: 30px;
-                background-color: #ffffff;
-            }
-            .nav {
-                padding: 10px 0;
-                margin: 15px;
-            }
-            .nav-title {
-                color: hsl(0, 0%, 0%);
-                margin: 15px;
-            }
-            .nav ul {
-                list-style-type: none;
-                padding: 0;
-                margin: 0;
-            }
-            .nav ul li {
-                display: inline;
-                margin-right: 9px;
-            }
-            .nav ul li a {
-                color: hwb(211 30% 18%);
-                text-decoration: none;
-            }
-            .nav ul li a:hover {
-                text-decoration: underline;
-            }
-            table {
-                border-collapse: collapse;
-                width: 100%;
-            }
-
-            th, td {
-                border: 1px solid #dddddd;
-                text-align: left;
-                padding: 8px;
-            }
-
-            th {
-                background-color: #f2f2f2;
-            }
-            .under-text {
-                font-size: 12px;
-                font-style: italic;
-            }
-        </style>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     </head>
     <header class = "nav">
         <h1 class="nav-title">Rielly H. Young  | Software Developer</h1>
