@@ -4,10 +4,11 @@ body {
     font-family: Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
 }
 .container {
-    width: 85%;
+    width: 80%;
     margin: auto;
     padding: 30px;
     background-color: #ffffff;
+    /* display: inline-block; */
 }
 .project {
     width: 85%;
@@ -34,13 +35,16 @@ body {
 .nav ul li {
     display: inline;
     margin-right: 9px;
+    margin-left: 8px;
 }
 .nav ul li a {
-    color: hwb(211 30% 18%);
-    text-decoration: none;
+    color: rgb(90, 45, 62);
+    text-decoration: solid;
+    outline-width: 15px;
 }
 .nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration:double;
+    background-color: #a4a4a445;
 }
 table {
     border-collapse: collapse;
@@ -84,4 +88,14 @@ th {
 }
 .read-btn {
     margin: auto;
+    position: sticky;
+}
+.further-reading {
+    background-color: #ffffff;
+    display: inline-block;
+    width: 20%;
+    margin: auto;
+}
+.further-reading p {
+    font-size: 10px;
 }
