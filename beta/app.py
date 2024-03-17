@@ -115,8 +115,12 @@ def index():
     return render_template('index.html')
 
 @application.route("/blog")
-def blog_page():
-    return render_template('blog.html')
+def wip_redirect():
+    return render_template('wip.html')
+
+# @application.route("/blog")
+# def blog_page():
+#     return render_template('blog.html')
 
 @application.route("/links")
 def links_page():
