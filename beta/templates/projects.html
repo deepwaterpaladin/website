@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link rel="icon" href="{{ url_for('static', filename='me.ico') }}" type="image/x-icon">
         <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        
     </head>
     <header class = "nav">
         <h1 class="nav-title">Rielly H. Young  | Technologist</h1>
@@ -290,9 +291,7 @@
                 <p>11. Petrova M., Sen, A., & Yildirim, P. (2021). “Social Media and Political Contributions: The Impact of New Technology on Political Competition”. Management Science: http://dx.doi.org/10.2139/ssrn.2836323 </p>
                 <p>12. Slater, M. (2018). “By the Numbers: Twitter Canada at Dx3 2018”. Twitter Blog: https://blog.twitter.com/en_ca/topics/insights/2018/TwitterCanada_at_Dx3</p>
             </div>
-
             <button id="see-more-btn">See more/less</button>
-            
         </div>
 
         <div class="block">
@@ -310,12 +309,6 @@
                 Your browser does not support the video tag.
             </video> 
         </div>
-
-        <script>
-            document.getElementById('see-more-btn').addEventListener('click', function() {
-                var additionalContent = document.querySelector('.additional-content');
-                additionalContent.style.display = (additionalContent.style.display === 'none' || additionalContent.style.display === '') ? 'block' : 'none';
-            });
-        </script>
+        <script src="{{url_for('static', filename='helpers.js')}}"></script>
     </body>
 </html>
