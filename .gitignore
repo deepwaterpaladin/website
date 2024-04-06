@@ -164,3 +164,4 @@ cython_debug/
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 *.pem
+.DS_Store
