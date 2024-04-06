@@ -136,16 +136,5 @@ def projects_page():
     return render_template('projects.html')
 
 
-@application.route("/submit_contact", methods=["POST"])
-def submit_contact():
-    header = generate_header(name)
-    req_name = request.form.get("name")
-    email = request.form.get("email")
-    message = request.form.get("message")
-    # Handle form submission (e.g., send email, save to database, etc.)
-    print(f"Contact form submission received from {req_name}")
-    return f"""{header}Thank you, {req_name}, for your message. We will get back to you soon!"""
-
-
 if __name__ == "__main__":
-    application.run(debug=True)
+    application.run()
