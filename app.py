@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 
-application = Flask(__name__)
+app = Flask(__name__)
 name = "Rielly H. Young | Software Developer"
 
 
@@ -110,11 +110,11 @@ def generate_contact_form():
         </form>
     """
 
-@application.route("/")
+@app.route("/")
 def index():
     return render_template('index.html')
 
-@application.route("/blog")
+@app.route("/blog")
 def wip_redirect():
     return render_template('wip.html')
 
@@ -122,19 +122,19 @@ def wip_redirect():
 # def blog_page():
 #     return render_template('blog.html')
 
-@application.route("/links")
+@app.route("/links")
 def links_page():
     return render_template('links.html')
 
-@application.route("/cv")
+@app.route("/cv")
 def cv_page():
     return render_template('cv.html')
 
 
-@application.route("/projects")
+@app.route("/projects")
 def projects_page():
     return render_template('projects.html')
 
 
 if __name__ == "__main__":
-    application.run()
+    app.run()
