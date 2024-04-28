@@ -4,6 +4,12 @@ function toggleAdditionalContent() {
     console.log("Opened or closed.")
 }
 
+function toggleProjectsContent(){
+    var projectsButton = document.querySelector('.projects-button');
+    projectsButton.style.display = (projectsButton.style.display === 'none' || projectsButton.style.display === '') ? 'block' : 'none';
+    console.log("Opened or closed.")
+}
+
 function getUsersLocation(){
     if ("geolocation" in navigator) {
         navigator.geolocation.getCurrentPosition(function(position) {
@@ -20,3 +26,4 @@ function getUsersLocation(){
 }
 
 document.getElementById("see-more-btn").addEventListener('click', toggleAdditionalContent);
+document.getElementById("see-more-projects-btn").addEventListener('click', toggleProjectsContent);

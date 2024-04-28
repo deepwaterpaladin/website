@@ -14,13 +14,27 @@
         <nav class="nav">
             <ul>
                 <li><a href="/">Home</a></li>|
-                <li><a href="/cv">CV</a></li> |
-                <li><a href="/projects">Projects</a></li>|
-                <li><a href="/blog">Blog</a></li>
+                <li><a href="/projects">Projects</a></li>
             </ul>
         </nav>
     </header>
     <body>
+        <div class="project">
+            <h2>One-Time-Pad Encryption Application (May 2022)</h2>
+            <p>A one-time-pad is a type of encryption that is used to hide the contents of a message. Each letter in the encrypted phrase has a corresponding "one-time-pad" number. </p>
+            <p>This number is then used to decrypt the message. Each one-time-pad number is a random number, and thus is impossible to guess and is theoretically impossible to crack by brute force. One-time-pads are used to hide messages in email, chat, and other online communication.</p>
+            <p>The sample application uses TKinter for a simplified GUI. Source code can be found <a href="https://github.com/deepwaterpaladin/encryption_application", target="_blank">here</a>.</p>
+            <video class="small-video" autoplay controls>
+                <source src="{{ url_for('static', filename='encryption.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> 
+        </div>
+
+        <div class="block">
+            <p> </p>
+            <p> </p>
+        </div>
+        
         <div class="project">
             <h2>Tweeting your way to Parliament: Quantitative Analysis of Twitter use in the 2022 Ontario Provincial Election (June, 2022)</h2>
             <p>Each month, more than fifteen million Canadians use Twitter - approximately 50% of the nation’s online population (Slater, 2018). Of this group, forty-four percent access the application multiple times a day. The ubiquity of the platform amongst voters is a driving factor in the increased attention from political scientists today.</p>
@@ -292,22 +306,6 @@
                 <p>12. Slater, M. (2018). “By the Numbers: Twitter Canada at Dx3 2018”. Twitter Blog: https://blog.twitter.com/en_ca/topics/insights/2018/TwitterCanada_at_Dx3</p>
             </div>
             <button id="see-more-btn">See more/less</button>
-        </div>
-
-        <div class="block">
-            <p> </p>
-            <p> </p>
-        </div>
-
-        <div class="project">
-            <h2>One-Time-Pad Encryption Application (May 2022)</h2>
-            <p>A one-time-pad is a type of encryption that is used to hide the contents of a message. Each letter in the encrypted phrase has a corresponding "one-time-pad" number. </p>
-            <p>This number is then used to decrypt the message. Each one-time-pad number is a random number, and thus is impossible to guess and is theoretically impossible to crack by brute force. One-time-pads are used to hide messages in email, chat, and other online communication.</p>
-            <p>The sample application uses TKinter for a simplified GUI. Source code can be found <a href="https://github.com/deepwaterpaladin/encryption_application", target="_blank">here</a>.</p>
-            <video class="small-video" autoplay controls>
-                <source src="{{ url_for('static', filename='encryption.mp4') }}" type="video/mp4">
-                Your browser does not support the video tag.
-            </video> 
         </div>
         <script src="{{url_for('static', filename='helpers.js')}}"></script>
     </body>
