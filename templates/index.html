@@ -29,6 +29,7 @@
             <p>Feel free to <a href="mailto:rielly.young11@gmail.com">email me</a>.</p>
         </div>
     </div>
+    
     <div id="cv" class="page" style="display: none;">
         <div class="cv">
             <div class="work">
@@ -111,6 +112,8 @@
             <p>Each month, more than fifteen million Canadians use Twitter - approximately 50% of the nation’s online population (Slater, 2018). Of this group, forty-four percent access the application multiple times a day. The ubiquity of the platform amongst voters is a driving factor in the increased attention from political scientists today.</p>
             <p>Given the pervasiveness of the platform, understanding its role in electoral outcomes is of great importance. This research paper seeks to contribute to the grow literature examining the impacts of social media on elections. It does so by examining the impacts of Twitter usage on the 43rd Parliament of Ontario.</p>
             <p>The following is a brief exeprt of a larger research paper conducted during my undergrad at uOttawa. For access to the full paper, please contact me <a href="mailto:rielly.young11@gmail.com?subject=Request%20for%20paper:%20Tweeting%20your%20way%20to%20Parliament">here</a>.</p>
+            <p> </p>
+            <button id="see-more-btn" class="btn">Expand / Close</button>
             <div class="additional-content" style="display: none;">
                 <h3>Literature Review</h3>
                 <p>There is a non-insignificant amount of scholarship examining the behaviour of political campaigns on Twitter.  This can be broken-down into two distinct categories: volume studies and content studies. The former category examines the impact of both the presence of a candidate on the platform and the sum of their usage. DiGrazia, et. al., (2013) examine more than half a million tweets pertaining to the 2010 & 2012 Congressional elections in the United States, arguing political behiviour can be determined by social media use.</p>
@@ -375,8 +378,7 @@
                 <p>10. Nickerson, D. & Rogers, T. (2014). “Political Campaigns and Big Data”. Journal of Economic Perspectives 28 (2), pp. 51-74.</p>
                 <p>11. Petrova M., Sen, A., & Yildirim, P. (2021). “Social Media and Political Contributions: The Impact of New Technology on Political Competition”. Management Science: http://dx.doi.org/10.2139/ssrn.2836323 </p>
                 <p>12. Slater, M. (2018). “By the Numbers: Twitter Canada at Dx3 2018”. Twitter Blog: https://blog.twitter.com/en_ca/topics/insights/2018/TwitterCanada_at_Dx3</p>
-            </div>
-            <button id="see-more-btn">See more/less</button>
+            </div>            
         </div>
     </div>
 
@@ -389,6 +391,7 @@
         }
 
         document.getElementById("see-more-btn").addEventListener('click', toggleAdditionalContent);
+        
         document.addEventListener("DOMContentLoaded", function() {
             const pages = document.querySelectorAll('.page');
             const navLinks = document.querySelectorAll('.nav a');
