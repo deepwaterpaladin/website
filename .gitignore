@@ -171,3 +171,5 @@ function/bin
 function/obj
 function/appsettings.json
 function/local.settings.json
+
+.vscode/*
