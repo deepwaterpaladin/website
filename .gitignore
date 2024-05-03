@@ -165,3 +165,9 @@ cython_debug/
 !.elasticbeanstalk/*.global.yml
 *.pem
 .DS_Store
+
+# Azure Functions artifacts
+function/bin
+function/obj
+function/appsettings.json
+function/local.settings.json
