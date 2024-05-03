@@ -170,6 +170,6 @@ cython_debug/
 function/bin
 function/obj
 function/appsettings.json
-function/local.settings.json
 
+local.settings.json
 .vscode
