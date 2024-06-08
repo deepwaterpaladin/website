@@ -8,14 +8,25 @@ with open('./posts.json', 'r') as f:
 
 @app.route("/")
 def index():
-    return render_template('index.html', posts=posts)
+    return render_template('index.html')
 
+@app.route("/cv")
+def cv():
+    return render_template('cv.html')
 
-@app.route('/post/<int:post_id>')
+@app.route("/projects")
+def projects():
+    return render_template('projects.html')
+
+@app.route("/blog")
+def blog():
+    return render_template('blog.html', posts=posts)
+
+@app.route('/blog/<string:post_id>')
 def post(post_id):
     p = next((post for post in posts if post['id'] == post_id), None)
     if p is None:
-        return "Post not found", 404
+        return render_template('404.html')
     return render_template('post.html', post=p)
 
 
