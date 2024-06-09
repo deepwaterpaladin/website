@@ -2,7 +2,7 @@ from flask import Flask, render_template
 import json
 
 app = Flask(__name__)
-name = "Rielly H. Young | Software Developer"
+name = "Rielly H. Young"
 with open('./posts.json', 'r') as f:
     posts = json.load(f)
 
@@ -28,6 +28,11 @@ def post(post_id):
     if p is None:
         return render_template('404.html')
     return render_template('post.html', post=p)
+
+@app.errorhandler(404)
+def page_not_found(error):
+    print(error)
+    return render_template('404.html')
 
 
 if __name__ == "__main__":
