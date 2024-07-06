@@ -16,11 +16,15 @@
         <h2>{{ post.title }}</h2>
         <h3 class="under-text">By {{ post.author }}, {{ post.date }}</h3>
         {% for paragraph in post.content %}
-            <p>{{ paragraph }}</p>
+            {% if paragraph[0] == "*" %}
+                <pre><code>{{ paragraph[1:] | e }}</code></pre>
+            {% endif %}
+            {% if paragraph[0] != "*" %}
+                <p>{{ paragraph }}</p>
+            {% endif %}
         {% endfor %}
         <!-- <button class="read-btn">Read More</button> -->
     </div>
     {% endblock %}
-
 </body>
 </html>

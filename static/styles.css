@@ -92,7 +92,7 @@ th {
     font-style: italic;
 }
 .blog-post p {
-    font-size: 12px;
+    font-size: 15px;
 }
 .read-btn {
     margin: auto;
@@ -175,4 +175,64 @@ th {
 }
 .error-a:hover {
     text-decoration: underline;
+}
+
+pre {
+    background: #282c34;
+    color: #abb2bf;
+    padding: 15px;
+    border-radius: 5px;
+    overflow: auto;
+    position: relative;
+}
+code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ddd;
+}
+.hljs-keyword,
+.hljs-built_in,
+.hljs-type {
+    color: #c5a5c5;
+}
+.hljs-literal,
+.hljs-number {
+    color: #ae81ff;
+}
+.hljs-string {
+    color: #a8cc8c;
+}
+.hljs-comment {
+    color: #5c6370;
+    font-style: italic;
+}
+.hljs-function {
+    color: #61aeee;
+}
+.hljs-attr {
+    color: #d19a66;
+}
+.hljs-variable {
+    color: #d19a66;
+}
+.hljs-title {
+    color: #e06c75;
+}
+.hljs-params {
+    color: #abb2bf;
+}
+pre .line-number {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    padding: 15px;
+    text-align: right;
+    border-right: 1px solid #ddd;
+    color: #666;
+    user-select: none;
+}
+.line-number span {
+    display: block;
+    line-height: 1.5;
 }
