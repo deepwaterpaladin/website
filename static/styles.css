@@ -93,6 +93,7 @@ th {
 }
 .blog-post p {
     font-size: 15px;
+    line-height: 28px;
 }
 .read-btn {
     margin: auto;
