@@ -3,7 +3,7 @@
         "id": "graphs",
         "title": "A Practical Implementation of Graphs",
         "author": "Rielly H. Young",
-        "date": "July 18th, 2024",
+        "date": "July 22nd, 2024",
         "content": 
         [
             "A common difficulty faced by organizations is the inability to quantify the relationship between abstract business objects. A makeshift solution is often the establishment of key performance indicators (KPIs) which, when aggregated, seek to provide quantifiable metrics related to a specific indicator. These KPIs can be used as proxy to compare various abstract objects against one another. But what if you were trying to compare a large number of products to one another, based off qualities that were unable to be easily quantified? What if your company provides a wide number of services across departments, and you wanted to determine which of these had the most overlap?",
