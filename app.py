@@ -8,7 +8,7 @@ with open('./posts.json', 'r') as f:
 
 @app.route("/")
 def index():
-    return render_template('index.html')
+    return render_template('index.html', posts=posts)
 
 @app.route("/cv")
 def cv():
