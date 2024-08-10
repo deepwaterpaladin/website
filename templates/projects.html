@@ -13,11 +13,23 @@
     {% block content %}
     <div id="projects" class="page">
         <div class="project">
+            <h2>StatCanPy & EuroStatPy (August 2024)</h2>
+            <p>My current job requires a significant amount of data injection from various government entities. While APIs and wrappers for said APIs are typically available, none of them impressed me (not to say they weren't functional, rather they lacked features that I will explain in a future <a href="/blog">blog post</a>).</p>
+            <p><a href="https://pypi.org/project/statscanpy/" target="_blank">StatCanPy</a> was the first package I published. It is a basic wrapper for StatsCan's web API that allows for text-based search of their <a href="https://www150.statcan.gc.ca/n1/en/type/data" target="_blank">publicly available data</a>. The package uses RegEx search to map dataset names to their associated IDs (which is required by the API).</p>
+            <p><a href="https://pypi.org/project/eurostatpy/" target="_blank">EuroStatPy</a> is almost identical to StatsCanPy from a user perspective. While StatCanPy allows plain text English searches, EuroStatPy allows for searches in English, French, or German. The package has access to over 6900 public datasets published by the European Union's statistical agency <a href="https://ec.europa.eu/eurostat/web/main/data/database" target="_blank">eurostat</a>.</p>
+            <p>Both of these projects are open source & I welcome contribution to them. The repos for can be found here for <a href="https://github.com/deepwaterpaladin/statscanpy" target="_blank">StatsCanPy</a> and <a href="https://github.com/deepwaterpaladin/eurostatpy" target="_blank">EuroStatPy</a> respectively.</p>
+        </div>
+        <div class="block">
+            <p> </p>
+            <p> </p>
+        </div>
+        <div class="project">
             <h2>One-Time-Pad Encryption Application (May 2022)</h2>
             <p>A one-time-pad is a type of encryption that is used to hide the contents of a message. Each letter in the encrypted phrase has a corresponding "one-time-pad" number. </p>
             <p>This number is then used to decrypt the message. Each one-time-pad number is a random number, and thus is impossible to guess and is theoretically impossible to crack by brute force. One-time-pads are used to hide messages in email, chat, and other online communication.</p>
             <p>The sample application uses TKinter for a simplified GUI. Source code can be found <a href="https://github.com/deepwaterpaladin/encryption_application", target="_blank">here</a>.</p>
-            <video class="small-video" autoplay controls>
+            <video class="small-video" controls>
+                <!-- <video class="small-video" autoplay controls> -->
                 <source src="{{ url_for('static', filename='encryption.mp4') }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
