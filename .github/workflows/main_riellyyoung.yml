@@ -40,7 +40,7 @@ jobs:
         run: zip release.zip ./* -r
 
       - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5.0.0
         with:
           name: python-app
           path: |
@@ -83,4 +83,5 @@ jobs:
           enable-oryx-build: true
 
           
+
 
